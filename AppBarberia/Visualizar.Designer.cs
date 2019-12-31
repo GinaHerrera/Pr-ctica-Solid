@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label2 = new System.Windows.Forms.Label();
+            this.Cerrar = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.Eliminar = new System.Windows.Forms.Button();
             this.tblRegistros = new System.Windows.Forms.DataGridView();
@@ -39,16 +39,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.tblRegistros)).BeginInit();
             this.SuspendLayout();
             // 
-            // label2
+            // Cerrar
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(611, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(20, 20);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "X";
+            this.Cerrar.AutoSize = true;
+            this.Cerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cerrar.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Cerrar.Location = new System.Drawing.Point(611, 9);
+            this.Cerrar.Name = "Cerrar";
+            this.Cerrar.Size = new System.Drawing.Size(20, 20);
+            this.Cerrar.TabIndex = 11;
+            this.Cerrar.Text = "X";
+            this.Cerrar.Click += new System.EventHandler(this.Cerrar_Click);
             // 
             // label1
             // 
@@ -114,11 +115,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(643, 337);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.Cerrar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Eliminar);
             this.Controls.Add(this.tblRegistros);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "Visualizar";
             this.Text = "Visualizar";
             ((System.ComponentModel.ISupportInitialize)(this.tblRegistros)).EndInit();
             this.ResumeLayout(false);
@@ -128,7 +130,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label Cerrar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Eliminar;
         private System.Windows.Forms.DataGridView tblRegistros;

@@ -16,5 +16,10 @@ namespace AppBarberia
         {
             InitializeComponent();
         }
+
+        private void Cerrar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }
